@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FD9B35;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background: linear-gradient(
+         180deg,
+        rgba(253,155,53,0.5) 0%,
+        rgba(253,54,54,1) 200%),
+        url(/HTML/IMG/fiesta.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: #2D00F7;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #2D00F7;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    color: #ffffff;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-txt {
+    width: 50%;
+}
+.header-txt h1 {
+    font-size: 120px;
+    color: #2D00F7;
+    font-family: 'Inter';
+}
+.header-txt p {
+    font-size: 16px;
+    color: #2D00F7;
+}
+/*.header img {
+    width: 400px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: 0;
+}
+*/
+.btn-descargar {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #43AA8B;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    border: 0;
+    cursor: pointer;
+}
+.btn-descargar:hover {
+    background-color: #7bc8b1;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #43AA8B;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 35px;
+    border: 0;
+    cursor: pointer;
+}
+.btn-1:hover {
+    background-color: #7bc8b1;
+}
+.about {
+    padding: 100px 0;
+    background: linear-gradient(
+         180deg,
+        rgba(253,155,53,0.5) 0%,
+        rgba(253,54,54,1) 200%);
+}
+.about-content {
+    display: flex;
+}
+.about-1 {
+    width: 50%;
+}
+h4 {
+    color: #2D00F7;
+}
+h3 {
+    font-size: 28px;
+    color: #2D00F7;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+p {
+    color: #2D00F7;
+    font-size: 16px;
+}
+.about-2 {
+    width: 50%;
+    padding-left: 150px;
+}
+.about-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.about-img img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+.about-txt {
+    padding-left: 25px;
+}
+.services {
+    padding: 100px 0;
+    background: linear-gradient(
+         180deg,
+        rgba(253,155,53,0.5) 0%,
+        rgba(253,54,54,1) 200%);
+}
+.services-txt {
+    text-align: center;
+}
+h2 {
+    font-size: 55px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #2D00F7;
+    margin-bottom: 50px0;
+}
+.services-txt p {
+    color: #3a3a3a;
+    margin-bottom: 35px;
+}
+.services-content {
+    text-align: center;
+}
+.services-content img {
+    width: 100%;
+    height: 350px;
+}
+.demo {
+    padding: 200px;
+    display: flex;
+    background: linear-gradient(
+         180deg,
+        rgba(253,155,53,0.5) 0%,
+        rgba(253,54,54,1) 200%);
+}
+.demo-txt {
+    width: 100%;
+}
+.demo-img {
+    width: 100%;
+}
+.demo-img img {
+    width: 300px;
+}
+.demo-txt p {
+    font-size: 20px;
+    color: #2D00F7;
+    margin-bottom: 30px;
+}
+.demo-txt .btn-1 {
+    text-align: center;
+    width: 350px;
+    font-size: 35px;
+}
+.footer {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h2 {
+    color: #fefbf8;
+}
+.form-group {
+    display: flex;
+}
+.campo {
+    padding: 13px 10px;
+    background-color: #b1afb0;
+    color: #fefbf8;
+    outline: none;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+    border: 0;
+}
+.campo::placeholder {
+    color: #fefbf8;
+    text-transform: capitalize;
+}
+@media(max-width:991px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            180deg,
+           rgba(253,155,53,0.5) 0%,
+           rgba(253,54,54,1) 100%);
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 100px 30px 30px 30px
+    }
+    .header-txt {
+        width: 100%;
+        text-align: center;
+    }
+    .header-txt h1 {
+        font-size: 90px;
+        line-height: 100px;
+    }
+    .header img {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .btn-1 {
+        margin-top: 25px;
+    }
+    .btn-descargar {
+        margin-top: 25px;
+    }
+    .about {
+        padding: 30px;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-2 {
+        width: 100%;
+        padding-left: 0;
+    }
+    .about-img {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .about-txt {
+        padding-left: 0;
+    }
+    .services {
+        padding: 30px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .services-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .demo {
+        padding: 0 30px 30px 30px;
+    }
+    .demo-txt {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .demo-img {
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+    .footer {
+        padding: 30px;
+    }
+    .form-group {
+        flex-direction: column;
+    }
+    .campo {
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+}
