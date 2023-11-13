@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="./JS/modules/uploadimgs.js"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./CSS/uploadimgs.css">
+    <title>Prueba</title>
+ </head>
+ <body>
+    
+    <input type="file" 
+    class="inputfile" 
+    id="fileinp" 
+    onchange="getFile(event)" 
+    accept="image/png, image/jpeg"
+    />
+
+    <label for="fileinp">+</label>
+    <span class="fileText"></span>
+    <button onclick="uploadImage()">UPLOAD IMAGE</button>
+    <div class="bar">
+        <div class="progress"></div>
+    </div>
+    <div class="uploadpercentage">0%</div>
+    <div class="imageUploaded">
+        <img src="" alt="">
+    </div>
+ </body>
+</html>
+ 
