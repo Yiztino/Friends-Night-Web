@@ -1,12 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDEDLa9OCZhMmMqq1NzoshTU-HmaEP0Vyw",
-    authDomain: "friendsnight-a7872.firebaseapp.com",
-    databaseURL: "https://friendsnight-a7872-default-rtdb.firebaseio.com",
-    projectId: "friendsnight-a7872",
-    storageBucket: "friendsnight-a7872.appspot.com",
-    messagingSenderId: "94101971637",
-    appId: "1:94101971637:web:bc3a03a677aad9d28514fc",
-    measurementId: "G-NWHTXVQSQL"
+    apiKey: "AIzaSyCB1Pom5GEzwyOUHfeXtERlZ4RypZOpnMg",
+    authDomain: "friendsnight2.firebaseapp.com",
+    projectId: "friendsnight2",
+    storageBucket: "friendsnight2.appspot.com",
+    messagingSenderId: "862663551448",
+    appId: "1:862663551448:web:4f0dfb9766d5ac216eaaad",
+    measurementId: "G-1QVEKMSYL8"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -19,11 +18,10 @@ var fileItem;
 var fileName;
 var img = document.querySelector(".img");
 
-function getFile(e)
-{
-fileItem= e.target.files[0];
-fileName= fileItem.name;
-fileText.innerHTML="fileName";
+function getFile(e){
+    fileItem= e.target.files[0];
+    fileName= fileItem.name;
+    fileText.innerHTML = fileName;
 }
 
 function uploadImage(){
