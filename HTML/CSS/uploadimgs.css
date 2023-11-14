@@ -44,7 +44,7 @@ button{
 }
 
 .progress{
-    background: linear-gradient(15deg,black,white);
+    background: linear-gradient(15deg,red,blue);
     height: 100%;
     width: 0%;
 }
