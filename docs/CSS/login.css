@@ -3,16 +3,99 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*
+#github-login{
+    margin-right: 1rem !important;
+    width: 10%;
+    float: left;
+    color: #00000000;
+    resize: horizontal;
+*/
+.element-icon{
+    margin-right: 1rem !important;
+    width: 100%;
+    float: left;
+    color: #00000000;
+    resize: horizontal;
+    flex-grow: 43%;
+}
+/*
+.parent {
+    
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    
+    text-align: center;
+    
+    
+    
+    
+}
+.child {    
+     
+      border: 1px solid red;
+     display: inline-block;
+     padding: 1rem 1rem;
+   
+    
+    vertical-align: middle;
+  
+    
+    
+}
 
+*/
 body {
     background: linear-gradient(45deg,blue,red);
 }
-
+.float-parent-element { 
+    width: 50%; 
+    float:inline-start
+} 
+.float-child-element1 { 
+    float: left; 
+    width: 90%; 
+    margin-left: 0%; 
+} 
+.float-child-element2 { 
+    float: right; 
+    width: 30%; 
+    height: 2rem;
+    margin-left: 1000%; 
+    margin-right: 0%;
+} 
+.red { 
+    background-color: red; 
+    margin-left: 50%; 
+    height: 3rem; 
+} 
+.yellow { 
+    margin-left: 50%; 
+    height: 100px; 
+    background-color: yellow; 
+}
 .menu-container {
     position: fixed;
     display: flex;
 }
+/* pruebita para los contenedores 
 
+.flex-parent-element {
+    display: flex;
+    width: 50%;
+  }
+  
+  .flex-child-element {
+    flex: 1;
+    border: 2px solid blueviolet;
+    margin: 10px;
+  }
+  
+  .flex-child-element:first-child {
+    margin-right: 20px;
+  }
+  */
 .menu {
     height: 100%;
     transition: .3s;
