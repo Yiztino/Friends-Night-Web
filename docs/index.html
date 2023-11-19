@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FriendsNight</title>
+<!--Esto hace animacion de desplasamiento cuando le das a un boton de la navbar-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+    
+                var target = this.hash;
+                var $target = $(target);
+    
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 800, 'swing', function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
     <link rel="stylesheet" href="./CSS/index.css">
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,8 +48,9 @@
                             <img src="./IMG/home.png" alt="Casa">
                         </a>
                     </li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#Tutorial">Media</a></li>
+                    <li><a href="#Nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#Contactanos">Contactanos</a></li>
                     <a href="#Demo" class="btn-descargar" >Prueba la demo</a>
                 </ul>
             </nav>
@@ -46,20 +65,19 @@
     </header>
     
 <!-- SECCION DE INFORMACION -->
-    <section class="about">
+    <section id="Nosotros" class="about scroll-section">
         <div class="about-content container">
             <div class="about-1">
                 <h2>Creadores</h2>
                 <br>
                 <h3>Cor Studios</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab mollitia tempora unde reiciendis illo, sint rerum laboriosam officiis corrupti? Distinctio ut facilis at facere eius debitis id? Consequatur, voluptatum!
+                    Hola, nosotros somos Cor Studios. Somos un equipo de cuatro desarrolladores los cuales nos unimos para crear juegos divertidos para ustedes.
                 </p>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum labore maxime facere ratione eos excepturi vitae distinctio sed inventore iste laudantium cupiditate rem, aliquid laboriosam repellat ipsa accusantium quisquam. Ea.
+                    En nuestro pequeño pero dedicado equipo, cada uno de nosotros aporta habilidades únicas que se combinan para dar vida a emocionantes aventuras en cada videojuego. Desde la programación hasta el diseño gráfico y la narrativa, cada integrante de Cor Studios desempeña un papel crucial en la creación de mundos envolventes y desafiantes.
                 </p>
-                <a href="#" class="btn-1">Saber mas</a>
             </div>
 
             <div class="about-2">
@@ -68,7 +86,7 @@
                     <img src="./IMG/b1.png" alt="">
                     <div class="about-txt">
                         <h4>André Cerdán</h4>
-                        <p>Diseñador de la pagina</p>
+                        <p>Programador</p>
                         <p>texto</p>
                     </div>
                 </div>
@@ -76,7 +94,7 @@
                     <img src="./IMG/b1.png" alt="">
                     <div class="about-txt">
                         <h4>Luis Lemus</h4>
-                        <p>Diseñador</p>
+                        <p>Programador</p>
                         <p>texto</p>
                     </div>
                 </div>
@@ -84,7 +102,15 @@
                     <img src="./IMG/b1.png" alt="">
                     <div class="about-txt">
                         <h4>Victor Sanchez</h4>
-                        <p>Diseñador</p>
+                        <p>Programador</p>
+                        <p>texto</p>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="./IMG/b1.png" alt="">
+                    <div class="about-txt">
+                        <h4>Diego Lecanda</h4>
+                        <p>Programador</p>
                         <p>texto</p>
                     </div>
                 </div>
@@ -93,7 +119,7 @@
     </section>
     
 <!-- SEGUNDA SECCION -->
-    <section class="services">
+    <section id="Tutorial" class="services scroll-section">
         <div class="services-txt container">
             <h2>Tutorial</h2>
             <br>
@@ -101,8 +127,8 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit atque vitae veritatis repudiandae consectetur numquam adipisci accusamus dolores rem? Eligendi dolorum nihil temporibus minima corrupti tenetur esse eveniet perferendis numquam!
             </p>
         </div>    
-        <div class="services-content container">
-            <video width="640" height="360" controls>
+        <div class="services-video container">
+            <video width="560" height="315" controls>
                 <source src="ruta-del-video/video.mp4" type="video/mp4">
                 Tu navegador no soporta el tag de video.
             </video>
@@ -110,7 +136,7 @@
     </section>
 
 <!-- DEMO -->
-    <main id="Demo" class="demo">
+    <main id="Demo" class="demo scroll-section">
         <div class="demo-1">
             <div class="demo-img">
                 <img src="./IMG/FriendsNightFigma.png" alt="">
@@ -129,7 +155,7 @@
     </main>
 
 <!-- FORMULARIO -->
-    <footer class="footer container">
+    <footer id="Contactanos" class="footer scroll-section">
         <h2>Contáctanos</h2>
         <br>
         <form>
