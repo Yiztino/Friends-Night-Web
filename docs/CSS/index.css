@@ -16,11 +16,10 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 25px; /* Ajusta la altura según tu diseño */
     border-bottom: 2px solid black; /* Línea debajo del navbar */
-  }
+}
 .navbar img {
-    width: 22px; /* Ajusta el valor según tus necesidades */
+    width: 23px; /* Ajusta el valor según tus necesidades */
     height: auto;
     margin-right: 10px;
 }
@@ -193,7 +192,8 @@ h2 {
     margin-bottom: 50px0;
 }
 .services-txt p {
-    color: #3a3a3a;
+    color: #2D00F7;
+    font-size: 18px;
     margin-bottom: 35px;
 }
 .services-video {
@@ -236,8 +236,9 @@ h2 {
 .demo-txt p {
     font-size: 20px;
     color: #2D00F7;
-    margin-bottom: 30px;
-    text-align: left;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 75%;
 }
 .demo-txt .btn-1 {
     text-align: center;
@@ -245,8 +246,8 @@ h2 {
     font-size: 30px;
     padding: 15px;
     position: relative;
-    top: 25%;
-    left: 50%;
+    top: 5%;
+    left: 37%;
     transform: translate(-50%, -50%);
 }
 .footer {
@@ -300,6 +301,11 @@ h2 {
            rgba(253,155,53,0.5) 0%,
            rgba(253,54,54,1) 100%);
         display: none;
+        border-bottom: none;
+        mask-image: none;
+    }
+    .navbar img {
+        will-change: scroll-position;
     }
     .menu .navbar ul li {
         width: 100%;
