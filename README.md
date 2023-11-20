@@ -11,3 +11,5 @@ André desarrollará la parte del html y el css, agregando clases.
 Luis desarrollará la parte funcional y responsiva de la página además de la conexión con el juego y la autenticación desde la página
 
 Y Víctor desarrollará la parte del juego y el demo para poderlo incrustar en la página y que se conecte con la base de datos
+
+Nuestra página en github pages: https://yiztino.github.io/Friends-Night-Web/
