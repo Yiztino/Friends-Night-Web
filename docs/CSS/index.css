@@ -32,7 +32,7 @@ nav {
          180deg,
         rgba(253,155,53,0.5) 0%,
         rgba(253,54,54,1) 200%),
-        url(/docs/IMG/fiesta.jpg);
+        url(../IMG/fiesta.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
