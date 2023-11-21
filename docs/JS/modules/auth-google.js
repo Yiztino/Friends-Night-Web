@@ -9,39 +9,43 @@ import {
   export function authGoogle(app) {
     const d = document,
       auth = getAuth(app),
-      provider = new GoogleAuthProvider();
-      //$appAuthGoogle = d.getElementById("app-auth-google");
+      provider = new GoogleAuthProvider(),
+      $appAuthGoogle = d.getElementById("app-auth-google");
   
     onAuthStateChanged(auth, (user) => {
       console.log(user);
   
       if (user) {
         console.log("Usuario Autenticado");
-        /*$appAuthGoogle.innerHTML = `
+        $appAuthGoogle.innerHTML = `
           <p>Si ves este contenido es porque estas logueado</p>
           <button id="google-logout">Salir</button>
           <p>Bienvenido ${user.displayName}</p>
           <img src="${user.photoURL}" alt="${user.displayName}">
-        `;*/
+        `;
       } else {
         console.log("Usuario NO Autenticado");
-        /*$appAuthGoogle.innerHTML = `<p>El contenido de esta sección es exclusivo para usuarios registrados</p>`;
-        */
+        $appAuthGoogle.innerHTML = `<p>El contenido de esta sección es exclusivo para usuarios registrados</p>`;
+        
       }
     });
   
     d.addEventListener("click", (e) => {
+      console.log("Haz hecho click")
       if (e.target.matches("#google-login")) {
         alert("Ingresando con Google");
-  
+        console.log('Presionaste ingresar con google')
         signInWithPopup(auth, provider)
           .then((res) => {
             console.log(res);
-           // $appAuthGoogle.innerHTML = `<p>Bienvenido ${res.user.displayName}</p>`;
+
+            //aqui nos debería mandar al juego
+           $appAuthGoogle.innerHTML = `<p>Bienvenido ${res.user.displayName}</p>`;
           })
           .catch((err) => {
             console.log(err);
-            //$appAuthGoogle.innerHTML = `<p>Error: <i>${err.code}</i> - <b>${err.message}</b></p>`;
+            //aqui nos aleja del jeugo
+            $appAuthGoogle.innerHTML = `<p>Error: <i>${err.code}</i> - <b>${err.message}</b></p>`;
           });
       }
   
