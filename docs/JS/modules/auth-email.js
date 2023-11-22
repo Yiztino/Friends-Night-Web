@@ -58,6 +58,7 @@ import {
             console.log("logueoexistodo")
             $appAuthEmail.innerHTML = `<p>Usuario logueado con el correo <b>${$form.email.value}</b></p>`;
             $form.reset();
+            window.location.href = "juegolog.html";
           })
           .catch((err) => {
             console.log(err);
