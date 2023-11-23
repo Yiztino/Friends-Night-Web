@@ -406,6 +406,7 @@ h2 {
     }
     .footer {
         padding: 30px;
+        text-align: center;
     }
     .form-group {
         flex-direction: column;
@@ -414,4 +415,71 @@ h2 {
         margin: 0 0 15px 0;
         width: 100%;
     }
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px; 
+}
+
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    color: #333; 
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+}
+
+
+.form-group textarea {
+    height: 80px;
+    width: 500px; 
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    width: 100px;
+    height: 50px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    background-color: #9abfff; 
+    color: #fff; 
+    border-color:#2D00F7; 
+    outline: none; 
 }
