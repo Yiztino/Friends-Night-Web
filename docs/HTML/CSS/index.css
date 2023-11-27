@@ -326,12 +326,17 @@ h2 {
     .header {
         min-height: 0vh;
     }
+    .header-img {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .header-img img {
+        width: 300px;
+        align-items: center;
+        margin-top: 3%;
+    }
     .header-content {
         padding: 100px 30px 30px 30px
-    }
-    .header-txt {
-        width: 100%;
-        text-align: center;
     }
     .header-txt h1 {
         font-size: 90px;

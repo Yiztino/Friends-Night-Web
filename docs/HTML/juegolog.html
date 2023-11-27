@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FriendsNight</title>
 <!--Esto hace animacion de desplasamiento cuando le das a un boton de la navbar-->
@@ -23,125 +23,75 @@
             });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
     <link rel="stylesheet" href="../HTML/CSS/index.css">
-    <!--
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        
-    -->
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <style>
+        .glide__slides img {
+            max-width: 45%;
+            height: auto;
+        }
+        .glide__arrows button {
+            margin-right: 850px;
+            margin-left: 150px;
+        }
+
+        .glide__arrows .glide__arrow--right {
+            margin-right: 0; /* Elimina el margen derecho para evitar espacio adicional */
+        }
+    </style>
 </head>
 <body>
 <!-- Menu -->
-    <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo">
-                <img src="../HTML/IMG/logofriends.png" alt="Nombre del logo">
-            </a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="../HTML/IMG/menu.png" class="menu-icono" alt="">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="../HTML/IMG/home.png" alt="Casa">
-                        </a>
-                    </li>
-                    <li><a href="#Tutorial">Media</a></li>
-                    <li><a href="#Nosotros">Sobre Nosotros</a></li>
-                    <li><a href="#Contactanos">Contactanos</a></li>
-                    <a href="#Demo" class="btn-descargar" >LOG OUT</a>
-                </ul>
-            </nav>
+<header class="header">
+    <div class="menu container">
+        <a href="#" class="logo">
+            <img src="../HTML/IMG/logofriends.png" alt="Nombre del logo">
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="../HTML/IMG/menu.png" class="menu-icono" alt="">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../HTML/IMG/home.png" alt="Casa">
+                    </a>
+                </li>
+                <li><a href="#Tutorial">Media</a></li>
+                <li><a href="#Nosotros">Sobre Nosotros</a></li>
+                <li><a href="#Contactanos">Contactanos</a></li>
+                <a href="#Demo" class="btn-descargar" >Prueba la demo</a>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-img">
+        <img src="../HTML/IMG/logofriends.png" alt="">
+    </div>
+</header>
+<main id="Demo" class="demo scroll-section">
+    <!-- Carrusel -->
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><img src="../HTML/IMG/FriendsNightFigma.png"  alt="Slide 1"></li>
+                <li class="glide__slide"><img src="../HTML/IMG/fiesta.jpg" alt="Slide 2"></li>
+                <li class="glide__slide"><img src="../HTML/IMG/b1.png" alt="Slide 3"></li>
+                <!-- Añade más slides según sea necesario -->
+            </ul>
         </div>
-        <div class="header-img">
-            <img src="../HTML/IMG/logofriends.png" alt="">
+        <div class="glide__arrows">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Anterior</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Siguiente</button>
         </div>
-    </header>
-    
-<!-- SECCION DE INFORMACION -->
-    <section id="Nosotros" class="about scroll-section">
-        <div class="about-content container">
-            <div class="about-1">
-                <h2>Creadores</h2>
-                <br>
-                <h3>Cor Studios</h3>
-                <p>
-                    Hola, nosotros somos Cor Studios. Somos un equipo de cuatro desarrolladores los cuales nos unimos para crear juegos divertidos para ustedes.
-                </p>
-                <br>
-                <p>
-                    En nuestro pequeño pero dedicado equipo, cada uno de nosotros aporta habilidades únicas que se combinan para dar vida a emocionantes aventuras en cada videojuego. Desde la programación hasta el diseño gráfico y la narrativa, cada integrante de Cor Studios desempeña un papel crucial en la creación de mundos envolventes y desafiantes.
-                </p>
-            </div>
+    </div>
 
-            <div class="about-2">
-                <h3>Nuestro equipo</h3>
-                <div class="about-img">
-                    <img src="../HTML/IMG/b1.png" alt="">
-                    <div class="about-txt">
-                        <h4>André Cerdán</h4>
-                        <p>Programador</p>
-                        <p>Desarrollo la parte del html y el css</p>
-                    </div>
-                </div>
-                <div class="about-img">
-                    <img src="../HTML/IMG/b1.png" alt="">
-                    <div class="about-txt">
-                        <h4>Luis Lemus</h4>
-                        <p>Programador</p>
-                        <p>Desarrollo la parte funcional y responsiva de la página además de la conexión con el juego y la autenticación desde la página</p>
-                    </div>
-                </div>
-                <div class="about-img">
-                    <img src="../HTML/IMG/b1.png" alt="">
-                    <div class="about-txt">
-                        <h4>Victor Sanchez</h4>
-                        <p>Programador</p>
-                        <p>Desarrolla la parte del juego y el demo para poderlo incrustar en la página y que se conecte con la base de datos</p>
-                    </div>
-                </div>
-                <div class="about-img">
-                    <img src="../HTML/IMG/b1.png" alt="">
-                    <div class="about-txt">
-                        <h4>Diego Lecanda</h4>
-                        <p>Programador</p>
-                        <p>Desarrolla la parte de la aplicacion para celulares</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-<!-- SEGUNDA SECCION -->
-    <section id="Tutorial" class="services scroll-section">
-        <div class="services-txt container">
-            <h2>Tutorial</h2>
-            <br>
-            <p>
-                ¡Prepárate para sumergirte en una experiencia de diversión y risas con nuestro juego de fiestas, Friends Night! Para que te familiarices rápidamente con la diversión que te espera, hemos preparado un tutorial breve. Si eres una persona visual, ¡este video tutorial es perfecto para ti!
-            </p>
-            <br>
-            <p>
-                En Friends Night, la diversión está garantizada con una serie de emocionantes minijuegos diseñados para poner a prueba tus habilidades cinematográficas y tu capacidad para la diversión espontánea. Echemos un vistazo a algunos de los emocionantes desafíos que te esperan:
-            </p>
-        </div>    
-        <div class="services-video container">
-            <video width="560" height="315" controls>
-                <source src="ruta-del-video/video.mp4" type="video/mp4">
-                Tu navegador no soporta el tag de video.
-            </video>
-        </div>
-    </section>
-
-<!-- DEMO -->
-    <main id="Demo" class="demo scroll-section">
-        <div class="demo-txt container">
-            <h1>io abia ponido mi juego aki</h1>
-        </div>
-    </main>
-
+    <div class="demo-txt container">
+        <h1>io abia ponido mi juego aki</h1>
+        <a href="./IMG/b1.png" class="btn-1" download="Domepolit te amo">xd</a>
+    </div>
+</main>
 <!-- FORMULARIO -->
     <footer id="Contactanos" class="footer scroll-section">
         <h2>Contáctanos</h2>
@@ -158,9 +108,21 @@
             <input type="submit" value="Enviar" class="btn-1">
         </form>
     </footer>
-    <!-- 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var glide = new Glide('.glide', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+            });
+    
+            glide.mount();
+    
+            $('.glide__arrow').on('click', function () {
+                var direction = $(this).data('glide-dir');
+                glide.go(direction);
+            });
+        });
+    </script>
 </body>
 </html>
