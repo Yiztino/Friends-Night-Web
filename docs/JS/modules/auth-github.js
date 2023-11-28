@@ -12,7 +12,7 @@ import {
     const d = document,
       auth = getAuth(app),
       provider = new GithubAuthProvider();
-      //$appAuthGitHub = d.getElementById("app-auth-github");
+      $appAuthGitHub = d.getElementById("app-auth-github");
   
     onAuthStateChanged(auth, (user) => {
       console.log(user);

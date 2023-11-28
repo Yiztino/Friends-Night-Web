@@ -25,7 +25,7 @@ import {
         `;
       } else {
         console.log("Usuario NO Autenticado");
-        $appAuthGoogle.innerHTML = `<p>El contenido de esta sección es exclusivo para usuarios registrados</p>`;
+        $appAuthGoogle.innerHTML = `<p class="message">El contenido de esta sección es exclusivo para usuarios registrados</p>`;
         
       }
     });
@@ -40,12 +40,12 @@ import {
             console.log(res);
 
             //aqui nos debería mandar al juego
-           $appAuthGoogle.innerHTML = `<p>Bienvenido ${res.user.displayName}</p>`;
+           $appAuthGoogle.innerHTML = `<p class="message">Bienvenido ${res.user.displayName}</p>`;
           })
           .catch((err) => {
             console.log(err);
             //aqui nos aleja del jeugo
-            $appAuthGoogle.innerHTML = `<p>Error: <i>${err.code}</i> - <b>${err.message}</b></p>`;
+            $appAuthGoogle.innerHTML = `<p class="message" >Error: <i>${err.code}</i> - <b>${err.message}</b></p>`;
           });
       }
   
