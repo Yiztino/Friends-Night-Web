@@ -26,20 +26,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
     <link rel="stylesheet" href="../HTML/CSS/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <style>
-        .glide__slides img {
-            max-width: 45%;
-            height: auto;
-        }
-        .glide__arrows button {
-            margin-right: 850px;
-            margin-left: 150px;
-        }
-
-        .glide__arrows .glide__arrow--right {
-            margin-right: 0; /* Elimina el margen derecho para evitar espacio adicional */
-        }
-    </style>
 </head>
 <body>
 <!-- Menu -->
@@ -70,26 +56,42 @@
         <img src="../HTML/IMG/logofriends.png" alt="">
     </div>
 </header>
-<main id="Demo" class="demo scroll-section">
-    <!-- Agregar texto en la parte superior -->
-    <div class="demo-header container">
-        <h1>Texto en la parte superior</h1>
+<section id="Tutorial" class="services scroll-section">
+    <div class="services-txt container">
+        <h2>Gracias por registrarte</h2>
+        <br>
+        <p>
+            Tu proceso de registro ha sido completado con éxito, y ahora estás listo para sumergirte en la experiencia única que ofrecemos. Como miembro de Friends Night, tendrás acceso a nuestro juego exclusivo, diseñado para brindarte momentos de diversión y conexión con tus amigos.
+        </p>
+        <br>
+        <p>
+            Te invitamos cordialmente a descargar nuestro juego y explorar las diversas funciones y desafíos que hemos preparado para ti. Estamos seguros de que disfrutarás de una experiencia única llena de entretenimiento.
+        </p>
+        <br>
+        <p>
+            Puedes descargar el juego con el link directo o puedes ir a nuestra pagina de Itch.io para conocer mas sobre el juego y su desarrollo.
+        </p>
+    </div>    
+    <div class="image-row">
+        <img src="./IMG/intro.jpg" alt="">
+        <img src="./IMG/menu.jpg" alt="Menu">
+        <img src="./IMG/instrucciones.jpg" alt="">
+        <img src="./IMG/rondas.jpg" alt="Imagen 2">
+        <img src="./IMG/juego.jpg" alt="">
     </div>
-
-    <!-- Agregar cuatro imágenes en fila -->
-    <div class="image-row container">
-        <img src="./IMG/FriendsNightFigma.png" alt="Imagen 1">
-        <img src="./IMG/logofriends.png" alt="Imagen 2">
-        <img src="./IMG/image3.jpg" alt="Imagen 3">
-        <img src="./IMG/image4.jpg" alt="Imagen 4">
+    <div class="link-descarga" style="display: flex; justify-content: center;">
+        <div class="itchio" style="text-align: center; margin: 0px 200px;">
+            <br>
+            <p>Pagina de Itch</p>
+            <a href="https://yiztino.itch.io/friends-night" class="btn-itch">Pagina de itch</a>
+        </div>
+        <div class="dr" style="text-align: center; margin: 0px 200px;">
+            <br>
+            <p>Descarga Directa</p>
+            <a class="btn-download" href="../APK/Friends Night.apk" download="FriendsNight">Descargar APK</a>
+        </div>
     </div>
-
-    <!-- Agregar dos botones en la parte inferior -->
-    <div class="button-section container">
-        <a href="#" class="btn-2">Botón 1</a>
-        <a href="#" class="btn-3">Botón 2</a>
-    </div>
-</main>
+</section>
 <!-- FORMULARIO -->
 <footer id="Contactanos" class="footer scroll-section">
     <h2>Contáctanos</h2>

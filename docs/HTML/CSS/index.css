@@ -166,7 +166,7 @@ h3 {
 }
 p {
     color: #2D00F7;
-    font-size: 16px;
+    font-size: 20px;
 }
 .about-2 {
     width: 50%;
@@ -206,18 +206,48 @@ h2 {
     font-size: 18px;
     margin-bottom: 35px;
 }
-.services-video {
+.descarga-txt p{
+    color: #2D00F7;
+    font-size: 45px;
+    margin-bottom: 35px;
     text-align: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    margin-left: 275px;
 }
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.image-row{
+    margin-left: 180px;
+}
+.image-row img {
+    max-width: 17%; /* Asegura que las imágenes no superen el ancho del contenedor */
+}
+.btn-download {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #43AA8B;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 35px;
+    border: 0;
+    cursor: pointer;
+}
+.btn-itch {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #43AA8B;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 35px;
+    border: 0;
+    cursor: pointer;
+}
+.itchio p {
+    color: #2D00F7;
+    font-size: 30px;
+}
+.dr p {
+    color: #2D00F7;
+    font-size: 30px;
 }
 .demo {
     padding: 65px;
@@ -418,6 +448,24 @@ h2 {
     .campo {
         margin: 0 0 15px 0;
         width: 100%;
+    }
+    .services-txt {
+        text-align: center;
+    }
+
+    .link-descarga {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itchio,
+    .dr {
+        margin: 30px 0; /* Añadir espacio entre los dos bloques de descarga */
+    }
+
+    .itchio,
+    .dr {
+        margin: 0; /* Eliminar los márgenes horizontales en dispositivos más pequeños */
     }
 }
 
