@@ -91,21 +91,25 @@
     </div>
 </main>
 <!-- FORMULARIO -->
-    <footer id="Contactanos" class="footer scroll-section">
-        <h2>Contáctanos</h2>
-        <br>
-        <form>
-            <div class="form-group">
-                <div>
-                    <input type="text" placeholder="Nombre:" name="name" class="campo">
-                    <br>
-                    <input type="email" placeholder="E-mail" name="email" class="campo">
-                </div>
-                <textarea name="message" cols="30" rows="2" placeholder="Mensaje:" class="campo"></textarea>
-            </div>
-            <input type="submit" value="Enviar" class="btn-1">
-        </form>
-    </footer>
+<footer id="Contactanos" class="footer scroll-section">
+    <h2>Contáctanos</h2>
+    <br>
+    <form action="https://formspree.io/f/mpzggzpj" method="POST">
+        <div class="form-group">
+            <label for="name">Nombre: </label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</footer>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var glide = new Glide('.glide', {
