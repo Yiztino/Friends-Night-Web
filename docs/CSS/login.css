@@ -336,6 +336,11 @@ section label {
 .fa-facebook {
     background: #3b5998;
 }
+.message{
+    background-color: #34a853;
+    color: whitesmoke;
+    text-align: center;
+}
 
 .fa-microsoft {
     background: conic-gradient(from -90deg, #f44336 90deg, #4caf50 90deg 180deg, #2196f3 180deg 270deg, #ffc107 270deg) 50% 50%/100% 150% no-repeat;
