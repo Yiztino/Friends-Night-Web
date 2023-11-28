@@ -92,7 +92,7 @@ nav {
     margin-right: 0;
 }
 .header-img img {
-    width: 1000px;
+    width: 600px;
     align-items: center;
 }
 .header-txt h1 {
@@ -331,9 +331,9 @@ h2 {
         margin-bottom: 40px;
     }
     .header-img img {
-        width: 300px;
+        width: 350px;
         align-items: center;
-        margin-top: 3%;
+        margin-top: 18%;
     }
     .header-content {
         padding: 100px 30px 30px 30px
